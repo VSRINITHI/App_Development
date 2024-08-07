@@ -1,0 +1,219 @@
+.sg-body {
+    background: radial-gradient(#f8f8f8, #C9E9EA, #f8f8f8, #C9E9EA, #f8f8f8);
+}
+
+.sg-content {
+    background-image: url('D:\\Fullstack Project\\frontend\\src\\Assets\\Images\\socialbg.jpeg');
+    height: 350px;
+    width: 100%;
+    padding-top: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    font-size: 45px;
+    text-align: center;
+}
+
+.sg-content h1, .sg-content h4 {
+    color: black;
+    animation: sg-zoomIn 6s ease-out infinite;
+}
+
+@keyframes sg-zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.sg-content-texts {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sg-partition {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.sg-partition li {
+    color: #838383;
+    font-size: larger;
+    padding-bottom: 4px;
+}
+
+.sg-partition img {
+    border-radius: 10px;
+}
+
+.sg-eventlists {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.sg-event-content {
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+}
+
+.sg-event-image {
+    flex: 1;
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.sg-event-image img {
+    max-width: 700px;
+    height: 240px;
+    border-radius: 20px;
+}
+
+.sg-event-content h2 {
+    margin-top: 0;
+}
+
+.sg-event-content p {
+    color: #555;
+    font-size: larger;
+}
+
+.sg-horizontal-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sg-horizontal-card .card-img {
+    width: 100px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.sg-horizontal-card .card-body {
+    flex: 1;
+    padding: 32px;
+    font-size: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sg-horizontal-card .card-body h3 {
+    margin: 5px 0;
+    padding: 0;
+    color: #333;
+    position: relative;
+    clip-path: inset(0 100% 0 0);
+    animation: sg-wipeEffect 2s ease-out forwards infinite;
+}
+
+@keyframes sg-wipeEffect {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.sg-eventlist2 {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.sg-eventlist2 .sg-event-image {
+    flex: 1;
+    padding: 10px;
+    padding-right: 100px;
+}
+
+.sg-eventlist2 .sg-event-image img {
+    max-width: 700px;
+    height: 240px;
+    border-radius: 20px;
+}
+
+.sg-eventlist2 .sg-event-content {
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+}
+
+.sg-rating {
+    text-align: center;
+    margin: 20px;
+}
+
+.sg-rating-stars {
+    display: inline-block;
+}
+
+.sg-star {
+    font-size: 24px;
+    color: #d3d3d3;
+}
+
+.sg-star.sg-filled {
+    color: #ffc107;
+}
+
+.sg-star.sg-partial {
+    color: #ffc107;
+    position: relative;
+}
+
+.sg-star.sg-partial::before {
+    content: "\u2605";
+    color: #d3d3d3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    overflow: hidden;
+}
+
+.sg-call-to-action {
+    text-align: center;
+    margin: 20px;
+}
+
+.sg-schedule-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    width: auto;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sg-call-to-action button {
+    font-size: 16px;   
+    width: 200px;
+}
+
+
+@keyframes sg-blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.sg-blinking {
+    animation: sg-blink 3s step-start infinite;
+}

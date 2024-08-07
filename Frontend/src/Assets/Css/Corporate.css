@@ -1,0 +1,227 @@
+.corporate-body {
+    background: radial-gradient(#f8f8f8, #C9E9EA, #f8f8f8, #C9E9EA);
+}
+
+.corporate-content {
+    background-image: url('D:\Fullstack Project\frontend\src\Assets\Images\Corporatebg1.jpg');
+    height: 350px;
+    width: 100%;
+    padding-top: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    font-size: 35px;
+    text-align: center;
+}
+
+.corporate-content h1, .corporate-content h4 {
+    color: black;
+    animation: zoomIn 5s ease-out infinite;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.corporate-content-texts {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.corporate-partition {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.corporate-partition li {
+    color: #838383;
+    font-size: larger;
+    padding-bottom: 4px;
+}
+
+.corporate-partition img {
+    border-radius: 10px;
+}
+
+.corporate-eventlists {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.corporate-event-content {
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+}
+
+.corporate-event-content p {
+    color: #555;
+    font-size: larger;
+}
+.corporate-event-image {
+    flex: 1;
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.corporate-event-image img {
+    max-width: 700px;
+    height: 240px;
+    border-radius: 20px;
+}
+
+.corporate-horizontal-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.corporate-horizontal-card .card-body {
+    flex: 1;
+    padding: 32px;
+    font-size: 30px;
+}
+
+.corporate-horizontal-card .card-body h3 {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.corporate-eventlist2 {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.corporate-eventlist2 .corporate-event-image {
+    flex: 1;
+    padding: 10px;
+    padding-right: 100px;
+}
+
+.corporate-eventlist2 .corporate-event-image img {
+    max-width: 700px;
+    height: 240px;
+    border-radius: 20px;
+}
+
+.corporate-eventlist2 .corporate-event-content {
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+}
+
+.corporate-horizontal-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.corporate-horizontal-card .card-body {
+    flex: 1;
+    padding: 32px;
+    font-size: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.corporate-horizontal-card .card-body h3 {
+    margin: 5px 0;
+    padding: 0;
+    color: #333;
+    position: relative;
+    clip-path: inset(0 100% 0 0);
+    animation: wipeEffect 2s ease-out forwards infinite;
+}
+
+@keyframes wipeEffect {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.corporate-Rating {
+    text-align: center;
+    margin: 20px;
+}
+
+.corporate-rating-stars {
+    display: inline-block;
+}
+
+.corporate-star {
+    font-size: 24px;
+    color: #d3d3d3;
+}
+
+.corporate-star.filled {
+    color: #ffc107;
+}
+
+.corporate-star.partial {
+    color: #ffc107;
+    position: relative;
+}
+
+.corporate-star.partialc::before {
+    content: "\u2605";
+    color: #d3d3d3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    overflow: hidden;
+}
+
+.corporate-call-to-action {
+    text-align: center;
+    margin: 20px;
+}
+
+.corporate-schedule-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    width: auto;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.corporate-call-to-action button {
+    font-size: 16px;   
+    width: 200px;
+}
+
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.corporate-blinking {
+    animation: blink 3s step-start infinite;
+}

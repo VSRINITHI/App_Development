@@ -1,0 +1,88 @@
+.me-body {
+  padding: 40px;
+  background-color: #f4f4f4;
+  margin-left: 180px;
+}
+  
+  .me-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff9900;
+  }
+  
+  .me-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .me-table th, .me-table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .me-table thead {
+    background-color: #ff9900;
+    color: #fff;
+  }
+  
+  .me-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .me-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .me-action-button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 26px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .me-action-button:hover {
+    background-color: #cc7a00;
+  }
+  .sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+  }
+  
+  .sidebar.hide {
+    transform: translateX(-100%);
+  }
+  
+  .menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .menu-icon:hover {
+    background-color: #cc7a00;
+  }
+  .me-search-input {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+  }
+  

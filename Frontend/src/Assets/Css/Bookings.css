@@ -1,0 +1,72 @@
+.bookings {
+  padding: 20px;
+  padding-left: 180px;
+  margin-top: -20px; /* Adjust this value as needed to move the table up */
+}
+
+.bookings h1 {
+  text-align: center;
+}
+
+.bookings table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto 20px; /* Center the table and add bottom margin */
+}
+
+.bookings table, .bookings th, .bookings td {
+  border: 1px solid #ddd;
+}
+
+.bookings th, .bookings td {
+  padding: 5px;
+  text-align: left;
+}
+
+.bookings th {
+  background-color: #f2f2f2;
+}
+
+.bookings tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.bookings tr:hover {
+  background-color: #f1f1f1;
+}
+
+.bookings .confirmed {
+  color: green;
+}
+
+.bookings .pending {
+  color: red;
+}
+.bookings-table
+{
+  margin-bottom: 160px;
+}
+.filter-section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-section label {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.filter-section input,
+.filter-section select {
+  padding: 5px;
+  margin-top: 5px;
+}
+.no-events {
+  text-align: center;
+  font-size: 1.2em;
+  color: #888;
+  margin-top: 20px;
+}

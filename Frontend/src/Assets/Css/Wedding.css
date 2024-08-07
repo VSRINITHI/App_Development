@@ -1,0 +1,179 @@
+.wedding-body {
+    background: radial-gradient(#f8f8f8, #C9E9EA, #f8f8f8, #C9E9EA, #f8f8f8);
+}
+
+.wedding-content {
+    background-image: url('D:/Fullstack Project/frontend/src/Assets/Images/weddingpart1.jpg');
+    height: 350px;
+    width: 100%;
+    padding-top: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    font-size: 45px;
+    text-align: center;
+}
+
+.wedding-content h1, .wedding-content h4 {
+    color: black;
+    animation: zoomIn 6s ease-out infinite;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.wedding-content-texts {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.wedding-partition {
+    flex: 1; 
+    margin: 0 10px; 
+    padding: 20px; 
+}
+
+.wedding-partition li {
+    color: #838383;
+    font-size: larger;
+    padding-bottom: 4px;
+}
+
+.wedding-partition img {
+    border-radius: 10px;
+}
+
+.wedding-eventlists {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.wedding-event-content {
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+}
+.wedding-event-content p {
+    color: #555;
+    font-size: larger;
+}
+.wedding-event-image {
+    flex: 1;
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.wedding-event-image img {
+    max-width: 700px;
+    height: 240px;
+    border-radius: 20px;
+}
+
+.wedding-horizontal-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wedding-horizontal-card .card-body {
+    flex: 1;
+    padding: 32px;
+    font-size: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wedding-horizontal-card .card-body h3 {
+    margin: 5px 0;
+    padding: 0;
+    color: #333;
+    position: relative;
+    clip-path: inset(0 100% 0 0);
+    animation: wipeEffect 2s ease-out forwards infinite;
+}
+
+@keyframes wipeEffect {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.wedding-eventlist2 {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.wedding-eventlist2 .wedding-event-image {
+    flex: 1;
+    padding: 10px;
+    padding-right: 100px;
+}
+
+.wedding-eventlist2 .wedding-event-image img {
+    max-width: 700px;
+    height: 240px;
+    border-radius: 20px;
+}
+
+.wedding-eventlist2 .wedding-event-content {
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+}
+
+.wedding-rating {
+    text-align: center;
+    padding: 20px;
+}
+
+.wedding-rating-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wedding-star {
+    font-size: 30px;
+    color: grey;
+}
+
+.wedding-star.filled {
+    color: #FFD700;
+}
+
+.wedding-call-to-action {
+    text-align: center;
+    padding: 20px;
+}
+.wedding-call-to-action button {
+    font-size: 16px;   
+    width: 200px;
+}
+
+.wedding-blinking {
+    animation: blinkingEffect 1s infinite;
+}
+
+@keyframes blinkingEffect {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

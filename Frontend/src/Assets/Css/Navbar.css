@@ -1,0 +1,64 @@
+.nav-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    height: 80px;
+    width: 100%;
+    position: relative; /* Changed to relative for proper positioning of dropdown */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-navbar h2, .nav-navbar h1 {
+    margin: 0 20px;
+}
+
+.nav-navbar h2 {
+    color: #838383;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-navbar h2:hover {
+    color: #CBC037;
+}
+
+.nav-navbar h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-dropdown {
+    position: absolute;
+    top: 100%; /* Adjusted to make sure it appears below the SERVICES item */
+    left: 0; /* Aligns dropdown with the left edge of the parent */
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: #ddd; /* Optional border for dropdown */
+    z-index: 1000; /* Ensures it is above other elements */
+    display: flex;
+    flex-direction: column; /* Ensures items are stacked vertically */
+}
+
+.nav-dropdown p {
+    margin: 0;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.nav-dropdown p:hover {
+    color: #CBC037;
+}
+
+.nav-navbar-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-dropdown-item {
+    text-decoration: none;
+}

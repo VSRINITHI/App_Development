@@ -1,0 +1,19 @@
+.foot-footer {
+  padding: 20px 0;
+  background-color: #f8f8f8; /* Light grey background */
+  border-top: 1px solid #ddd; /* Light grey border on top */
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.foot-footer a {
+  text-decoration: none;
+  color: #0E86A9; /* Matching your theme color */
+}
+
+.foot-footer a:hover {
+  text-decoration: underline;
+}

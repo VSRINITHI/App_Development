@@ -1,0 +1,36 @@
+.eb-booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .eb-booking-form label {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .eb-booking-form input,
+  .eb-booking-form select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    width: 100%;
+  }
+  
+  .eb-booking-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .eb-booking-form button:hover {
+    background-color: #45a049;
+  }
+  
+  
+  

@@ -1,0 +1,140 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.home-body {
+    background: radial-gradient(#f8f8f8, #C9E9EA, #f8f8f8, #f8f8f8, #C9E9EA);
+}
+
+i {
+    color: black;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.home-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+}
+
+.home-line2 {
+    display: inline;
+}
+
+.home-slidingwords {
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: calc(35px + 2vmin);
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.home-slidingwords p {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    animation: home-pop-in 5s ease-in-out infinite;
+    margin-top: -52.5px;
+    padding-left: 310px;
+}
+
+@keyframes home-pop-in {
+    0%, 25%, 100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    35%, 65% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.home-part2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.home-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 200px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.home-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.home-part3 {
+    text-align: center;
+}
+
+.home-part4 {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 40px;
+    padding: 40px 0; /* Add spacing around the content */
+    background-color: #f5f5f5; /* Light background */
+}
+
+.home-container {
+    max-width: 1200px; /* Limit the container width */
+    margin: 0 auto; /* Center the container */
+    display: contents; /* Make the container not interfere with grid layout */
+}
+
+.home-section1 {
+    grid-column: 2; /* Place section1 in the second column */
+}
+
+.home-section2 {
+    grid-column: 1; /* Place section2 in the first column */
+}
+
+.home-section {
+    text-align: center;
+}
+
+.home-section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.home-section-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555; /* Slightly lighter color */
+}
+
+.home-section p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+}
+
+.home-arrow-right {
+    width: 30px;
+    height: 30px;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    margin-top: 20px;
+    transform: rotate(-45deg);
+    margin-left: 240px;
+}
